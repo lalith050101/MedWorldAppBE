@@ -33,6 +33,13 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.lucee/postgresql -->
+		<dependency>
+		    <groupId>org.lucee</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>8.3-606.jdbc4</version>
+		</dependency>
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
