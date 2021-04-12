@@ -12,7 +12,7 @@ import com.example.model.UserModel;
 import javax.transaction.Transactional;
 
 @Repository
-@Transactional
+//@Transactional
 public interface UserModelRepository extends JpaRepository<UserModel,Long>{
     Optional<UserModel> findByUsername(String username);
     Optional<UserModel> findByEmail(String email);
