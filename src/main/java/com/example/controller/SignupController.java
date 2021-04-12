@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.model.UserModel;
 import com.example.repository.UserModelRepository;
 
-@CrossOrigin(origins = "")
+@CrossOrigin(origins = "http://localhost:8081")
 @RestController
 public class SignupController {
 
