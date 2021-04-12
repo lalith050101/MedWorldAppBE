@@ -16,7 +16,7 @@ import com.example.repository.UserModelRepository;
 public class MyUserDetailsService implements UserDetailsService{
 
     @Autowired
-    UserModelRepository userModelRepository;
+    private UserModelRepository userModelRepository;
 
     @Override
     public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
