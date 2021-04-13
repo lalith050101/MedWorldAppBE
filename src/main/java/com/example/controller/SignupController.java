@@ -27,11 +27,13 @@ public class SignupController {
         System.out.println("inside signup "+user.getEmail());
         String email = user.getEmail();
         UserModel userModel = userModelRepository.findByEmail(email).orElse(null);
+        System.out.println("inside signup 2 "+user.getEmail());
         //System.out.print(userModel.getUserId());
         if(userModel != null)
         {
             return false;
         }
+        System.out.println("inside signup 3 "+user.getEmail());
         user.setActive(true);
         
         if(user.getEmail().equals("admin") && user.getPassword().equals("admin"))
@@ -41,7 +43,9 @@ public class SignupController {
         
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         //user.setPassword(String.valueOf(user.getPassword().hashCode()));
+        System.out.println("inside signup last before "+user.getEmail());
         userModelRepository.save(user);
+        System.out.println("inside signup last "+user.getEmail());
         System.out.println(true);
         return true;
 
