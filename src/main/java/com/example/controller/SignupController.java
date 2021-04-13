@@ -37,9 +37,9 @@ public class SignupController {
         System.out.println("inside signup 3 "+user.getEmail());
         user.setActive(true);
         
-        if(user.getEmail().equals("admin") && user.getPassword().equals("admin"))
-        	user.setRole("admin");
-        else
+//         if(user.getEmail().equals("admin") && user.getPassword().equals("lalith@123"))
+//         	user.setRole("admin");
+//         else
         	user.setRole("user");
         
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
