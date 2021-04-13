@@ -26,8 +26,9 @@ public class SignupController {
     public boolean saveUser(@RequestBody UserModel user) {
         System.out.println("inside signup "+user.getEmail());
         String email = user.getEmail();
+         System.out.println("inside signup 1 ");
         UserModel userModel = userModelRepository.findByEmail(email).orElse(null);
-        System.out.println("inside signup 2 "+user.getEmail());
+        System.out.println("inside signup 2 ");
         //System.out.print(userModel.getUserId());
         if(userModel != null)
         {
