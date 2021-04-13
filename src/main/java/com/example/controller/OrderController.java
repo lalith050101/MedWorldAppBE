@@ -26,7 +26,8 @@ import java.util.zip.DataFormatException;
 import java.util.zip.Deflater;
 import java.util.zip.Inflater;
 
-@CrossOrigin(origins = "http://localhost:8081")
+//@CrossOrigin(origins = "http://localhost:8081")
+@CrossOrigin(origins = "https://medworld.daranip.com")
 //@CrossOrigin(origins = "https://8081-dbdedffdadadeeffdaabdfaccfeebafecbf.examlyiopb.examly.io")
 @RestController
 public class OrderController {
