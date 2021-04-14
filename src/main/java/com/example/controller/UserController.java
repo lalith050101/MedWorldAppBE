@@ -12,7 +12,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 //@CrossOrigin(origins = "http://localhost:8081")
-@CrossOrigin(origins = "https://medworld.daranip.com")
+@CrossOrigin(origins = {"https://medworld.daranip.com","https://medworld.netlify.app"})
 
 @RestController
 public class UserController {
