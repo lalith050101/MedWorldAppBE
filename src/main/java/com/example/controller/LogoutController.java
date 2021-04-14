@@ -16,7 +16,7 @@ import com.example.repository.UserModelRepository;
 import com.example.util.JwtUtil;
 
 //@CrossOrigin(origins = "http://localhost:8081")
-@CrossOrigin(origins = "https://medworld.daranip.com")
+@CrossOrigin(origins = {"https://medworld.daranip.com","https://medworld.netlify.app"})
 @RestController
 public class LogoutController {
         
