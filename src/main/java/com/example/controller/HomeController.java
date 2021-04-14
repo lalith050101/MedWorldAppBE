@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 //@CrossOrigin(origins = "http://localhost:8081")
 //@CrossOrigin(origins = "https://8081-dbdedffdadadeeffdaabdfaccfeebafecbf.examlyiopb.examly.io")
-@CrossOrigin(origins = "https://medworld.daranip.com")
+@CrossOrigin(origins = {"https://medworld.daranip.com","https://medworld.netlify.app"})
 @RestController
 @RequestMapping("/")
 public class HomeController {
