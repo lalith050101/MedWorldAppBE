@@ -79,7 +79,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
     public CorsConfigurationSource corsConfigurationSource() {
     	System.out.println("inside corsconfigurationsource bean************************");
     	CorsConfiguration c = new CorsConfiguration();
-    	c.setAllowedOrigins(Arrays.asList("https://medworld.daranip.com"));
+    	c.setAllowedOrigins(Arrays.asList("https://medworld.daranip.com","https://medworld.netlify.app"));
     	c.setAllowedMethods(Arrays.asList("*"));
     	c.setAllowedHeaders(Arrays.asList("*"));
     	c.setAllowCredentials(false);
