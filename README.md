@@ -16,10 +16,10 @@ Payment Gateway.
   BackEnd: https://medworld.herokuapp.com/  
    
 ## Technologies Used:
-  OpenJDK
-  Spring Boot
-  Spring Web (Rest Controller)
-  Spring Security
-  Spring Data JPA
-  PostgreSQL Database
+  OpenJDK  
+  Spring Boot  
+  Spring Web (Rest Controller)  
+  Spring Security  
+  Spring Data JPA  
+  PostgreSQL Database  
    
