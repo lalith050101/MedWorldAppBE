@@ -91,7 +91,7 @@ public class OrderController {
             Date date =new Date();
             millis = date.getTime();
             orderListModel.setType("COD");
-        	orderListModel.setPaymentId("COD"+String.valueOf(millis));
+        	orderListModel.setPaymentId("cod_"+String.valueOf(millis));
         	orderId = "cod_"+String.valueOf(millis);
         }
         orderListModel.setStatus(Long.parseLong("0"));
