@@ -133,7 +133,7 @@ public class OrderController {
             Date date =new Date();
             millis = date.getTime();
             orderListModel.setType("COD");
-        	orderListModel.setPaymentId("COD"+String.valueOf(millis));
+        	orderListModel.setPaymentId("cod_"+String.valueOf(millis));
         	orderId = "cod_"+String.valueOf(millis);
         }
         orderListModel.setStatus(Long.parseLong("0"));
@@ -322,10 +322,12 @@ public class OrderController {
     }
     
     @GetMapping("/order/{Id}")
-    public OrderModel getUserOrderById(@PathVariable long Id){
+    public List<OrderModel> getUserOrderById(@PathVariable long Id){
     	System.out.println("inside GetOrder by Pk....");
-	    System.out.println(orderRepository.findById(Id).getPrice());
-    	return orderRepository.findById(Id);
+	   OrderListModel orderListModel = orderListRepository.findById(Id);
+	    String paymentId = orderListModel.getPaymentId();
+	    
+    	return orderRepository.findAllByOrderId(paymentId);
     	
     }
 }
