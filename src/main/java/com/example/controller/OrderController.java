@@ -297,7 +297,7 @@ public class OrderController {
         String username = jwtUtil.extractUsername(jwt);
         UserDetails userDetails = this.userDetailsService.loadUserByUsername(username);
         UserModel userModel = userModelRepository.findByEmail(userDetails.getUsername()).orElse(null);
-        return orderListRepository.findAllByUserIdAndStatusNotIn(userModel.getUserId(), Arrays.asList(Long.valueOf(-1)));        
+        return orderListRepository.findAllByUserId(userModel.getUserId());        
     }
     
     @GetMapping("/orderlist/{Id}")
