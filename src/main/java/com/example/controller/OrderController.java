@@ -324,6 +324,7 @@ public class OrderController {
     @GetMapping("/order/{Id}")
     public OrderModel getUserOrderById(@PathVariable long Id){
     	System.out.println("inside GetOrder by Pk....");
+	    System.out.println(orderRepository.findById(Id).getId());
     	return orderRepository.findById(Id);
     	
     }
