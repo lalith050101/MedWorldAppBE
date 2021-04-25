@@ -16,5 +16,7 @@ public interface OrderListRepository extends JpaRepository<OrderListModel,Long> 
     
     List<OrderListModel> findAllByUserId(Long userId); 
     
+     List<OrderListModel> findAllByUserIdAndStatusNotIn(Long userId, List<Long> status); 
+    
         
 }
