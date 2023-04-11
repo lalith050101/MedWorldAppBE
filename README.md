@@ -11,9 +11,6 @@ Prescription is validated by admin for a specific medicine.
 Filters for products like Low to High or High to Low.  
 Payment Gateway.  
 
-## Demo:
-  FrontEnd: https://medworld.netlify.app/  
-  BackEnd: https://medworld.herokuapp.com/  
   
 ## Frontend Repo:  
   https://github.com/lalith050101/MedWorldAppFE  
